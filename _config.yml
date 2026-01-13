@@ -1,5 +1,8 @@
 title: Curiosity Log
-theme: minima
+
+url: "https://harshvermac5.github.io"
+baseurl: "/curiosity"
+
 collections:
   notes:
     output: true
