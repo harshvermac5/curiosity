@@ -1,3 +1,6 @@
-title: My Jekyll Site
+title: Curiosity Log
 theme: minima
+collections:
+  notes:
+    output: true
 
