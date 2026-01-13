@@ -1,3 +1,9 @@
+---
+title: Ssh Reverse Tunnel
+description: Short summary of Ssh Reverse Tunnel
+layout: note
+---
+
 Sure, I can help you set up a **reverse SSH tunnel** so that you can always access both of your PCs (PC A and PC B) from anywhere, even if their public IPs change and your ISP doesn't support port forwarding.
 
 Since your cloud instance has a stable public IP (101.98.97.10), we'll use it as a "jump point" to create a connection from your local PCs to the cloud. Once the reverse tunnel is established from both PCs to the cloud instance, you can SSH into the cloud and access the local PCs as if they were directly accessible.

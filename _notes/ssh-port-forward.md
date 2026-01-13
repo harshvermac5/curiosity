@@ -1,3 +1,9 @@
+---
+title: Ssh Port Forward
+description: Short summary of Ssh Port Forward
+layout: note
+---
+
 Got it! You want to understand **SSH port forwarding**. Let’s break it down carefully, step by step. SSH port forwarding is a way to tunnel network traffic securely through an SSH connection. There are **three main types**: **local, remote, and dynamic**.
 
 ---

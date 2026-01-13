@@ -1,3 +1,9 @@
+---
+title: Git Github Setup
+description: Short summary of Git Github Setup
+layout: note
+---
+
 Absolutely! Let’s go **step by step** to configure Git on Linux and connect it to GitHub so you can push code from the terminal. I’ll make it clear and thorough.
 
 ---

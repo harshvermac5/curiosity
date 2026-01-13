@@ -1,3 +1,9 @@
+---
+title: Venv Python
+description: Short summary of Venv Python
+layout: note
+---
+
 A **virtual environment (venv)** lets you isolate Python packages for each project so they don’t conflict with others. Here’s a clear, beginner-friendly guide.
 
 ---

@@ -1,3 +1,9 @@
+---
+title: Setting Up Offline Repo
+description: Short summary of Setting Up Offline Repo
+layout: note
+---
+
 To **download a package with all its dependencies (without installing them)** using `apt`, use one of the following methods depending on your needs.
 
 ---

@@ -1,3 +1,9 @@
+---
+title: Ffmpeg Mp4 To Mp3
+description: Short summary of Ffmpeg Mp4 To Mp3
+layout: note
+---
+
 Here are the most common and reliable ways to convert **all `.mp4` files to `.mp3` in a specific folder using FFmpeg**.
 
 ---

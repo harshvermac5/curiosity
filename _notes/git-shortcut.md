@@ -1,3 +1,9 @@
+---
+title: Git Shortcut
+description: Short summary of Git Shortcut
+layout: note
+---
+
 Great 👍 Let’s make **Git + GitHub pushing as fast and painless as possible on Linux**.
 
 Below are **practical shortcuts and quality-of-life setups** most developers use.

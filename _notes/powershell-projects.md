@@ -1,3 +1,9 @@
+---
+title: Powershell Projects
+description: Short summary of Powershell Projects
+layout: note
+---
+
 Here are some beginner-friendly PowerShell automation projects to build your skills:
 
 ### File Management

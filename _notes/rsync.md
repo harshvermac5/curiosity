@@ -1,3 +1,9 @@
+---
+title: Rsync
+description: Short summary of Rsync
+layout: note
+---
+
 layout: note
 title: Learning rsync
 description: Notes on rsync usage

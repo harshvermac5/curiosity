@@ -1,3 +1,9 @@
+---
+title: Splunk Query
+description: Short summary of Splunk Query
+layout: note
+---
+
 Below is a **clear explanation of each Splunk query**, what it does, and *why* it’s typically used. I’ll break down every command piece by piece.
 
 ---
