@@ -1,3 +1,7 @@
+layout: note
+title: Learning rsync
+description: Notes on rsync usage
+
 `rsync` is a powerful command-line tool for copying and syncing files between directories or machines, efficiently transferring only the differences.
 
 Below is a practical, step-by-step guide from basic to advanced usage.
