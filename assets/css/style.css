@@ -72,7 +72,6 @@ main {
   flex: 1;
   padding: 2rem;
   max-width: 100vw;
-  overflow-x: hidden;
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
