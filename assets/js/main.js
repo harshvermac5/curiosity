@@ -83,12 +83,6 @@ function generateRandomGradient(mode = 'dark') {
     return `linear-gradient(135deg, ${color1}, ${color2})`;
 }
 
-// ---------- Text Color ----------
-function applyTextColor(mode) {
-    document.body.style.color =
-        mode === 'light' ? '#111' : '#f5f5f5';
-}
-
 // ---------- Radio Logic ----------
 const radios = document.querySelectorAll('input[name="themeMode"]');
 
