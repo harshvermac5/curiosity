@@ -3,35 +3,25 @@ function getRandomDarkHexColor() {
     const r = Math.floor(Math.random() * 128);
     const g = Math.floor(Math.random() * 128);
     const b = Math.floor(Math.random() * 128);
-    return (
-        '#' +
-        r.toString(16).padStart(2, '0') +
-        g.toString(16).padStart(2, '0') +
-        b.toString(16).padStart(2, '0')
-    );
+    return '#' + r.toString(16).padStart(2, '0') +
+                 g.toString(16).padStart(2, '0') +
+                 b.toString(16).padStart(2, '0');
 }
 
 function getRandomLightHexColor() {
     const r = Math.floor(128 + Math.random() * 128);
     const g = Math.floor(128 + Math.random() * 128);
     const b = Math.floor(128 + Math.random() * 128);
-    return (
-        '#' +
-        r.toString(16).padStart(2, '0') +
-        g.toString(16).padStart(2, '0') +
-        b.toString(16).padStart(2, '0')
-    );
+    return '#' + r.toString(16).padStart(2, '0') +
+                 g.toString(16).padStart(2, '0') +
+                 b.toString(16).padStart(2, '0');
 }
 
-// ---------- Contrast Calculation (WCAG) ----------
+// ---------- Contrast Calculation ----------
 function hexToRgb(hex) {
     hex = hex.replace('#', '');
     const num = parseInt(hex, 16);
-    return {
-        r: (num >> 16) & 255,
-        g: (num >> 8) & 255,
-        b: num & 255
-    };
+    return { r: (num >> 16) & 255, g: (num >> 8) & 255, b: num & 255 };
 }
 
 function luminance({ r, g, b }) {
@@ -68,11 +58,7 @@ function getCookie(name) {
 // ---------- Gradient Generator ----------
 function generateRandomGradient(mode = 'dark') {
     let color1, color2, contrastValue;
-
-    const colorFn =
-        mode === 'light'
-            ? getRandomLightHexColor
-            : getRandomDarkHexColor;
+    const colorFn = mode === 'light' ? getRandomLightHexColor : getRandomDarkHexColor;
 
     do {
         color1 = colorFn();
@@ -83,17 +69,21 @@ function generateRandomGradient(mode = 'dark') {
     return `linear-gradient(135deg, ${color1}, ${color2})`;
 }
 
+// ---------- Text Color ----------
+function applyTextColor(mode) {
+    document.body.style.color = mode === 'light' ? '#111' : '#f5f5f5';
+}
+
 // ---------- Radio Logic ----------
 const radios = document.querySelectorAll('input[name="themeMode"]');
 
-// Load saved mode
-const savedMode = getCookie('themeMode') || 'dark';
+// Load saved mode: localStorage > cookies > default
+let savedMode = localStorage.getItem('themeMode') || getCookie('themeMode') || 'dark';
 
 // Apply saved state
 radios.forEach(radio => {
     radio.checked = radio.value === savedMode;
 });
-
 document.body.style.background = generateRandomGradient(savedMode);
 applyTextColor(savedMode);
 
@@ -103,7 +93,12 @@ radios.forEach(radio => {
         if (!radio.checked) return;
 
         const mode = radio.value;
+
+        // Save to localStorage and cookies
+        localStorage.setItem('themeMode', mode);
         setCookie('themeMode', mode);
+
+        // Apply changes
         document.body.style.background = generateRandomGradient(mode);
         applyTextColor(mode);
     });
