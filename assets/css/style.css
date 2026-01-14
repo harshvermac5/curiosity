@@ -1,7 +1,6 @@
 /* ---------- RESET & BASE STYLES ---------- */
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
 }
 
@@ -17,8 +16,11 @@ html, body {
 /* ---------- HEADER ---------- */
 header {
   padding: 1rem 2rem;
-  background: linear-gradient(90deg, #1f1f1f, #111);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.8);
+
 }
 
 header h1 {
@@ -137,10 +139,13 @@ article hr {
 footer {
   padding: 1rem 2rem;
   text-align: center;
-  background: linear-gradient(90deg, #111, #1f1f1f);
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.5);
   color: #bbb;
   font-size: 0.9rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.8);
+
 }
 
 footer hr {
