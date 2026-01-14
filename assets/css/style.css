@@ -74,8 +74,12 @@ main {
   max-width: 100vw;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  white-space: normal;
+}
 
+main pre,
+main code {
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 article h1 {
