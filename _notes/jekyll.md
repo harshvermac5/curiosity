@@ -144,11 +144,11 @@ layout: note
 
 ### g) **Liquid**
 
+```markdown
 * The templating language Jekyll uses
 * Syntax: `{{ variable }}`, `{% loops %}`, `{% if %}`, etc.
 * Example:
 
-```liquid
 {% for note in site.notes %}
   <h2>{{ note.title }}</h2>
 {% endfor %}
