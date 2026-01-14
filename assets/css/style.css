@@ -6,13 +6,15 @@
 }
 
 .card {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   display: block;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   text-decoration: none;
   color: inherit;
-  background: #fff;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
@@ -29,3 +31,15 @@
   color: #555;
 }
 
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    text-transform: capitalize;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}

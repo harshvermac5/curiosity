@@ -1,7 +1,7 @@
 import os
 
 # Folder containing your notes
-NOTES_FOLDER = "_notes"
+CONTEXT_FOLDER = input("Please enter name of your desired folder: ")
 
 # Default front matter template
 FRONT_MATTER_TEMPLATE = """---
@@ -12,9 +12,9 @@ layout: note
 """
 
 # Loop through all Markdown files in the folder
-for filename in os.listdir(NOTES_FOLDER):
+for filename in os.listdir(CONTEXT_FOLDER):
     if filename.endswith(".md"):
-        file_path = os.path.join(NOTES_FOLDER, filename)
+        file_path = os.path.join(CONTEXT_FOLDER, filename)
         
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()

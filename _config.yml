@@ -6,4 +6,5 @@ baseurl: "/curiosity"
 collections:
   notes:
     output: true
-
+  essays:
+    output: true

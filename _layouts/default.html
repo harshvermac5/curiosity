@@ -12,9 +12,18 @@
     <h1>{{ site.title }}</h1>
     <hr>
       <nav>
-    <a href="{{ site.baseurl }}/">Home</a>
-    <a href="{{ site.baseurl }}/notes">Notes</a>
-    <a href="{{ site.baseurl }}/about">About</a>
+		<a href="{{ site.baseurl }}/">Home</a>
+		<a href="{{ site.baseurl }}/notes">Notes</a>
+		<a href="{{ site.baseurl }}/essays">Essays</a>
+		<label>
+			<input type="radio" name="themeMode" value="dark">
+			Dark
+		</label>
+		
+		<label>
+			<input type="radio" name="themeMode" value="light">
+			Light
+		</label>
   </nav>
 
   </header>
