@@ -1,9 +1,3 @@
----
-title: Jekyll
-description: Short summary of Jekyll
-layout: note
----
-
 Absolutely! Let’s break down **how Jekyll works** in a way that makes sense for a beginner web developer, step by step. You’ll see why your notes site now works, why layouts and collections exist, and what GitHub Pages is doing behind the scenes.
 
 I’ll keep it conceptual first, then show the “flow” from Markdown to a live website.
